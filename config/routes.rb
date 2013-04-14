@@ -1,4 +1,7 @@
 Temple::Application.routes.draw do
+  resources :volunteers
+
+
   resources :schedules
 
 

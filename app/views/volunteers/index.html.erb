@@ -1,0 +1,61 @@
+<h1>Listing volunteers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Phone number</th>
+    <th>Email</th>
+    <th>Student name1</th>
+    <th>Student name2</th>
+    <th>Student name3</th>
+    <th>Grade1</th>
+    <th>Grade2</th>
+    <th>Grade3</th>
+    <th>Day available</th>
+    <th>Weekly shopper</th>
+    <th>Computer lab</th>
+    <th>Fundraising committee</th>
+    <th>Office volunteer</th>
+    <th>School closing committee</th>
+    <th>Room parent</th>
+    <th>School newsletter</th>
+    <th>Special event</th>
+    <th>Hebrew tutor</th>
+    <th>Other</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @volunteers.each do |volunteer| %>
+  <tr>
+    <td><%= volunteer.name %></td>
+    <td><%= volunteer.phone_number %></td>
+    <td><%= volunteer.email %></td>
+    <td><%= volunteer.student_name1 %></td>
+    <td><%= volunteer.student_name2 %></td>
+    <td><%= volunteer.student_name3 %></td>
+    <td><%= volunteer.grade1 %></td>
+    <td><%= volunteer.grade2 %></td>
+    <td><%= volunteer.grade3 %></td>
+    <td><%= volunteer.day_available %></td>
+    <td><%= volunteer.weekly_shopper %></td>
+    <td><%= volunteer.computer_lab %></td>
+    <td><%= volunteer.fundraising_committee %></td>
+    <td><%= volunteer.office_volunteer %></td>
+    <td><%= volunteer.school_closing_committee %></td>
+    <td><%= volunteer.room_parent %></td>
+    <td><%= volunteer.school_newsletter %></td>
+    <td><%= volunteer.special_event %></td>
+    <td><%= volunteer.hebrew_tutor %></td>
+    <td><%= volunteer.other %></td>
+    <td><%= link_to 'Show', volunteer %></td>
+    <td><%= link_to 'Edit', edit_volunteer_path(volunteer) %></td>
+    <td><%= link_to 'Destroy', volunteer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Volunteer', new_volunteer_path %>

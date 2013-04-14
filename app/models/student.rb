@@ -1,5 +1,6 @@
 class Student
   include Mongoid::Document
+
   field :last_name, type: String
   field :first_name, type: String
   field :hebrew_name, type: String

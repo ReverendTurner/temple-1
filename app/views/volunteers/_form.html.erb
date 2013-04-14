@@ -1,0 +1,49 @@
+<%= simple_form_for(@volunteer) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :phone_number %>
+    <%= f.input :email %>
+    <%= f.input :student_name1 %>
+    <%= f.input :student_name2 %>
+    <%= f.input :student_name3 %>
+    <%= f.input :grade1 %>
+    <%= f.input :grade2 %>
+    <%= f.input :grade3 %>
+    <%= f.input :day_available %>
+    <%= f.check_box :weekly_shopper %>
+    <%= f.label "Weekly Shopping Assistant" %><br/>
+ 
+    <%= f.check_box :computer_lab %>
+    <%= f.label "Computer Lab" %><br/>
+
+    <%= f.check_box :fundraising_committee %>
+    <%= f.label "Fundraising Committee" %><br/>
+
+    <%= f.check_box :office_volunteer %>
+    <%= f.label "Office Volunteer" %><br/>
+
+    <%= f.check_box :school_closing_committee %>
+    <%= f.label "School Closing Committee" %><br/>
+
+    <%= f.check_box :room_parent %>
+    <%= f.label "Room Parent" %><br/>
+
+    <%= f.check_box :school_newsletter %>
+    <%= f.label "School Newsletter" %><br/>
+
+    <%= f.check_box :special_event %>
+    <%= f.label "Special Event" %><br/>
+
+    <%= f.check_box :hebrew_tutor %>
+    <%= f.label "Hebrew Tutor" %><br/>
+
+    <%= f.check_box :other %>
+    <%= f.label "Other" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

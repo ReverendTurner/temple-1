@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  phone_number: MyString
+  email: MyString
+  student_name1: MyString
+  student_name2: MyString
+  student_name3: MyString
+  grade1: MyString
+  grade2: MyString
+  grade3: MyString
+  day_available: MyString
+  weekly_shopper: false
+  computer_lab: false
+  fundraising_committee: false
+  office_volunteer: false
+  school_closing_committee: false
+  room_parent: false
+  school_newsletter: false
+  special_event: false
+  hebrew_tutor: false
+  other: MyString
+
+two:
+  name: MyString
+  phone_number: MyString
+  email: MyString
+  student_name1: MyString
+  student_name2: MyString
+  student_name3: MyString
+  grade1: MyString
+  grade2: MyString
+  grade3: MyString
+  day_available: MyString
+  weekly_shopper: false
+  computer_lab: false
+  fundraising_committee: false
+  office_volunteer: false
+  school_closing_committee: false
+  room_parent: false
+  school_newsletter: false
+  special_event: false
+  hebrew_tutor: false
+  other: MyString
