@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Student1:</b>
+  <%= @schedule.student1 %>
+</p>
+
+<p>
+  <b>Student2:</b>
+  <%= @schedule.student2 %>
+</p>
+
+<p>
+  <b>Student3:</b>
+  <%= @schedule.student3 %>
+</p>
+
+<p>
+  <b>Grade1:</b>
+  <%= @schedule.grade1 %>
+</p>
+
+<p>
+  <b>Grade2:</b>
+  <%= @schedule.grade2 %>
+</p>
+
+<p>
+  <b>Grade3:</b>
+  <%= @schedule.grade3 %>
+</p>
+
+
+<%= link_to 'Edit', edit_schedule_path(@schedule) %> |
+<%= link_to 'Back', schedules_path %>

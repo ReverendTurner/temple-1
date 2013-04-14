@@ -1,0 +1,52 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "base";
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+.container {
+  @include container;
+}
+
+header {
+  @include container;
+}
+
+.student{
+  @include container;
+}
+.student-name{
+  @include span-columns(12, 24);
+}
+.student-grade{
+  @include span-columns(12 omega, 24);
+}
+
+#class-schedules {
+  @include container;
+}
+
+#submit-schedule {
+  @include container;
+}
+
+body {
+  line-height: 1.5em;
+  font-family: Helvetica, Arial;
+}
+
+.container h1{ line-height: 1em; font-size: 1.3em; text-align:center;}
+.container h2{text-align:center; font-size: 1em;}
+
+.grade-schedule-item {
+  border: 2px solid #eee;
+  padding: 4px;
+  .grade {
+    @include span-columns(2,14);
+  }
+  .schdule-info {
+    @include span-columns(12 omega, 14);
+  }
+}

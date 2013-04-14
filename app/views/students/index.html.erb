@@ -1,0 +1,91 @@
+<h1>Listing students</h1>
+
+<table>
+  <tr>
+    <th>Last name</th>
+    <th>First name</th>
+    <th>Hebrew name</th>
+    <th>Dob</th>
+    <th>Grade</th>
+    <th>School</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>Zip</th>
+    <th>Subdivision</th>
+    <th>Home phone</th>
+    <th>Parents names</th>
+    <th>Email</th>
+    <th>Phone1</th>
+    <th>Phone2</th>
+    <th>Emergency name</th>
+    <th>Emergency name</th>
+    <th>2</th>
+    <th>Emergency relationship</th>
+    <th>Emergency relationship2</th>
+    <th>Medications</th>
+    <th>Allergies</th>
+    <th>Arrangements</th>
+    <th>Other religion</th>
+    <th>Adhd</th>
+    <th>Perceptual</th>
+    <th>Processing problem</th>
+    <th>Visual aud</th>
+    <th>Speech</th>
+    <th>Reading diff</th>
+    <th>Dyslexia</th>
+    <th>Autism</th>
+    <th>Ocd</th>
+    <th>Other</th>
+    <th>Discuss priv</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @students.each do |student| %>
+  <tr>
+    <td><%= student.last_name %></td>
+    <td><%= student.first_name %></td>
+    <td><%= student.hebrew_name %></td>
+    <td><%= student.dob %></td>
+    <td><%= student.grade %></td>
+    <td><%= student.school %></td>
+    <td><%= student.address %></td>
+    <td><%= student.city %></td>
+    <td><%= student.zip %></td>
+    <td><%= student.subdivision %></td>
+    <td><%= student.home_phone %></td>
+    <td><%= student.parents_names %></td>
+    <td><%= student.email %></td>
+    <td><%= student.phone1 %></td>
+    <td><%= student.phone2 %></td>
+    <td><%= student.emergency_name %></td>
+    <td><%= student.emergency_name %></td>
+    <td><%= student.2 %></td>
+    <td><%= student.emergency_relationship %></td>
+    <td><%= student.emergency_relationship2 %></td>
+    <td><%= student.medications %></td>
+    <td><%= student.allergies %></td>
+    <td><%= student.arrangements %></td>
+    <td><%= student.other_religion %></td>
+    <td><%= student.adhd %></td>
+    <td><%= student.perceptual %></td>
+    <td><%= student.processing_problem %></td>
+    <td><%= student.visual_aud %></td>
+    <td><%= student.speech %></td>
+    <td><%= student.reading_diff %></td>
+    <td><%= student.dyslexia %></td>
+    <td><%= student.autism %></td>
+    <td><%= student.ocd %></td>
+    <td><%= student.other %></td>
+    <td><%= student.discuss_priv %></td>
+    <td><%= link_to 'Show', student %></td>
+    <td><%= link_to 'Edit', edit_student_path(student) %></td>
+    <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Student', new_student_path %>

@@ -1,0 +1,33 @@
+<h1>Listing schedules</h1>
+
+<table>
+  <tr>
+    <th>Student1</th>
+    <th>Student2</th>
+    <th>Student3</th>
+    <th>Grade1</th>
+    <th>Grade2</th>
+    <th>Grade3</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @schedules.each do |schedule| %>
+  <tr>
+    <td><%= schedule.student1 %></td>
+    <td><%= schedule.student2 %></td>
+    <td><%= schedule.student3 %></td>
+    <td><%= schedule.grade1 %></td>
+    <td><%= schedule.grade2 %></td>
+    <td><%= schedule.grade3 %></td>
+    <td><%= link_to 'Show', schedule %></td>
+    <td><%= link_to 'Edit', edit_schedule_path(schedule) %></td>
+    <td><%= link_to 'Destroy', schedule, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Schedule', new_schedule_path %>

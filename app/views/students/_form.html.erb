@@ -1,0 +1,151 @@
+<%= form_for(@student) do |f| %>
+  <% if @student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+      <% @student.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="name-row">
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %><br/>
+  </div>
+ 
+  <div class="field">
+    <%= f.label :first_name %><br/>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :hebrew_name %><br />
+    <%= f.text_field :hebrew_name %>
+  </div>
+  </div><!-- name-row -->
+
+  <div class="field">
+    <%= f.label :dob %><br />
+    <%= f.date_select :dob %>
+  </div>
+  <div class="field">
+    <%= f.label :grade %><br />
+    <%= f.text_field :grade %>
+  </div>
+  <div class="field">
+    <%= f.label :school %><br />
+    <%= f.text_field :school %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :zip %><br />
+    <%= f.text_field :zip %>
+  </div>
+  <div class="field">
+    <%= f.label :subdivision %><br />
+    <%= f.text_field :subdivision %>
+  </div>
+  <div class="field">
+    <%= f.label :home_phone %><br />
+    <%= f.text_field :home_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :parents_names %><br />
+    <%= f.text_field :parents_names %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :phone1 %><br />
+    <%= f.text_field :phone1 %>
+  </div>
+  <div class="field">
+    <%= f.label :phone2 %><br />
+    <%= f.text_field :phone2 %>
+  </div>
+  <div class="field">
+    <%= f.label :emergency_name %><br />
+    <%= f.text_field :emergency_name %>
+  </div>
+  <div class="field">
+    <%= f.label :emergency_name2 %><br />
+    <%= f.text_field :emergency_name2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :emergency_relationship %><br />
+    <%= f.text_field :emergency_relationship %>
+  </div>
+  <div class="field">
+    <%= f.label :emergency_relationship2 %><br />
+    <%= f.text_field :emergency_relationship2 %>
+  </div>
+
+  <h4>PROVIDING US WITH THE FOLLOWING INFORMATION WILL ENABLE US TO MORE FULLY MEET EACH
+STUDENT’S INDIVIDUAL NEEDS AND/OR SPECIAL CIRCUMSTANCES.</h4>
+  <div class="field">
+    <%= f.label "DESCRIBE ANY MEDICATION(S) WHICH THE STUDENT TAKES REGULARLY:" %><br />
+    <%= f.text_field :medications %>
+  </div>
+  <div class="field">
+    <%= f.label "ALLERGIES – PLEASE SPECIFY:" %><br />
+    <%= f.text_field :allergies %>
+  </div>
+  <div class="field">
+    <%= f.label "DESCRIBE ANY SPECIAL OR UNUSUAL FAMILY ARRANGEMENTS THAT MIGHT AFFECT ATTENDANCE:" %><br />
+    <%= f.text_field :arrangements %>
+  </div>
+  <div class="field">
+    <%= f.label "IS YOUR CHILD CURRENTLY RECEIVING EDUCATION IN A RELIGION OTHER THAN JUDAISM? IF SO, WHICH? WILL IT AFFECT THE CHILD’S ATTENDANCE?" %><br />
+    <%= f.text_field :other_religion %>
+  </div>
+  <div class="">
+    <h4>SPECIAL LEARNING CONDITIONS</h4>
+    <h6>OUR RELIGIOUS SCHOOL PROGRAM RECOGNIZES THE IMPORTANCE OF ENSURING THE SUCCESS OF EACH STUDENT. IF YOUR CHILD HAS BEEN IDENTIFIED AS
+BENEFITTING EDUCATIONALLY FROM SPECIAL NEEDS ATTENTION, PLEASE INDICATE THE APPROPRIATE AREAS BELOW. FURTHER, IF YOUR CHILD HAS AN IEP 
+AT PUBLIC SCHOOL, WE ASK THAT YOU BRING A COPY OF THE IEP WITH THIS FORM, SO WE CAN INCORPORATE THE SAME CLASS MODIFICATIONS INTO
+HIS/HER INSTRUCTION HERE AT TKE.</h6>
+    <%= f.label :adhd %>
+    <%= f.select :adhd, ["Yes", "No"] %><br/>
+  
+    <%= f.label :perceptual %>
+    <%= f.check_box :perceptual %><br/>
+
+    <%= f.label :processing_problem %>
+    <%= f.check_box :processing_problem %><br/>
+
+    <%= f.label "Visual/Audio" %>
+    <%= f.check_box :visual_aud %><br/>
+
+    <%= f.label :speech %><br />
+    <%= f.check_box :speech %><br/>
+    <%= f.label "Reading Difficulties" %><br />
+    <%= f.check_box :reading_diff %>
+    <%= f.label :dyslexia %><br />
+    <%= f.check_box :dyslexia %>
+    <%= f.label :autism %><br />
+    <%= f.check_box :autism %>
+    <%= f.label :ocd %><br />
+    <%= f.check_box :ocd %><br/>
+    <%= f.label :other %><br />
+    <%= f.text_field :other %>
+  </div>
+  <div class="field">
+    <%= f.label "I WOULD LIKE TO DISCUSS MY CHILD’S NEEDS PRIVATELY WITH THE PRINCIPAL." %>
+    <%= f.check_box :discuss_priv %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

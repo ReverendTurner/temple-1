@@ -1,0 +1,75 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  last_name: MyString
+  first_name: MyString
+  hebrew_name: MyString
+  dob: 2013-04-12
+  grade: MyString
+  school: MyString
+  address: MyString
+  city: MyString
+  zip: MyString
+  subdivision: MyString
+  home_phone: MyString
+  parents_names: MyString
+  email: MyString
+  phone1: MyString
+  phone2: MyString
+  emergency_name: MyString
+  emergency_name: MyString
+  2: MyString
+  emergency_relationship: MyString
+  emergency_relationship2: MyString
+  medications: 
+  allergies: 
+  arrangements: MyString
+  other_religion: MyString
+  adhd: false
+  perceptual: false
+  processing_problem: false
+  visual_aud: false
+  speech: false
+  reading_diff: false
+  dyslexia: false
+  autism: false
+  ocd: false
+  other: MyString
+  discuss_priv: false
+
+two:
+  last_name: MyString
+  first_name: MyString
+  hebrew_name: MyString
+  dob: 2013-04-12
+  grade: MyString
+  school: MyString
+  address: MyString
+  city: MyString
+  zip: MyString
+  subdivision: MyString
+  home_phone: MyString
+  parents_names: MyString
+  email: MyString
+  phone1: MyString
+  phone2: MyString
+  emergency_name: MyString
+  emergency_name: MyString
+  2: MyString
+  emergency_relationship: MyString
+  emergency_relationship2: MyString
+  medications: 
+  allergies: 
+  arrangements: MyString
+  other_religion: MyString
+  adhd: false
+  perceptual: false
+  processing_problem: false
+  visual_aud: false
+  speech: false
+  reading_diff: false
+  dyslexia: false
+  autism: false
+  ocd: false
+  other: MyString
+  discuss_priv: false

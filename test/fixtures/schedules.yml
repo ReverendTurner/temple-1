@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  student1: MyString
+  student2: MyString
+  student3: MyString
+  grade1: MyString
+  grade2: MyString
+  grade3: MyString
+
+two:
+  student1: MyString
+  student2: MyString
+  student3: MyString
+  grade1: MyString
+  grade2: MyString
+  grade3: MyString
