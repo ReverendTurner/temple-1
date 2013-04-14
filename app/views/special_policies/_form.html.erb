@@ -1,0 +1,18 @@
+<%= simple_form_for(@special_policy) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :parent_signature %>
+    <%= f.input :date %>
+    <%= f.input :student1 %>
+    <%= f.input :student2 %>
+    <%= f.input :student3 %>
+    <%= f.input :grade1 %>
+    <%= f.input :grade2 %>
+    <%= f.input :grade3 %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

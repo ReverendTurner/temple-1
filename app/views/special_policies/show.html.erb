@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Parent signature:</b>
+  <%= @special_policy.parent_signature %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @special_policy.date %>
+</p>
+
+<p>
+  <b>Student1:</b>
+  <%= @special_policy.student1 %>
+</p>
+
+<p>
+  <b>Student2:</b>
+  <%= @special_policy.student2 %>
+</p>
+
+<p>
+  <b>Student3:</b>
+  <%= @special_policy.student3 %>
+</p>
+
+<p>
+  <b>Grade1:</b>
+  <%= @special_policy.grade1 %>
+</p>
+
+<p>
+  <b>Grade2:</b>
+  <%= @special_policy.grade2 %>
+</p>
+
+<p>
+  <b>Grade3:</b>
+  <%= @special_policy.grade3 %>
+</p>
+
+
+<%= link_to 'Edit', edit_special_policy_path(@special_policy) %> |
+<%= link_to 'Back', special_policies_path %>

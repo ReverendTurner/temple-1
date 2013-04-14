@@ -1,4 +1,7 @@
 Temple::Application.routes.draw do
+  resources :special_policies
+
+
   resources :volunteers
 
 
