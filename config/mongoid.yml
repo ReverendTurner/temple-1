@@ -81,5 +81,4 @@ test:
 production:
   sessions:
     default:
-      database: mongoid
       uri: <%= ENV['MONGOHQ_URL'] %>
