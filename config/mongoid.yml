@@ -80,4 +80,8 @@ test:
         retry_interval: 0
 production:
   sessions:
-    uri: <%= ENV['mongodb://heroku_app14961217:f16kerb05a4hdn7398b6m9dt@ds047057.mongolab.com:47057/heroku_app14961217'] %>
+    default:
+      database: mongoid
+#     uri: <%= ['MONGOHQ_URL'] %>
+# uri: <%= 
+# ENV['mongodb://heroku_app14961217:f16kerb05a4hdn7398b6m9dt@ds047057.mongolab.com:47057/heroku_app14961217'] %>
