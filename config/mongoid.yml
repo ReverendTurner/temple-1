@@ -79,4 +79,5 @@ test:
         max_retries: 1
         retry_interval: 0
 production:
-  uri: <%= ENV['mongodb://heroku_app14961217:f16kerb05a4hdn7398b6m9dt@ds047057.mongolab.com:47057/heroku_app14961217'] %>
+  sessions:
+    uri: <%= ENV['mongodb://heroku_app14961217:f16kerb05a4hdn7398b6m9dt@ds047057.mongolab.com:47057/heroku_app14961217'] %>
